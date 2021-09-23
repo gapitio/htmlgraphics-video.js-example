@@ -5,6 +5,7 @@ import livereload from "rollup-plugin-livereload";
 import json from "@rollup/plugin-json";
 import postcss from "rollup-plugin-postcss";
 import html from "rollup-plugin-html";
+import copy from "rollup-plugin-copy-watch";
 
 const OUT_DIR = "public/build";
 
@@ -34,7 +35,11 @@ export default [
       nodeResolve({
         browser: true,
       }),
-      livereload(OUT_DIR),
+      livereload(),
+      copy({
+        watch: "src/rootCSS.css",
+        targets: [{ src: "src/rootCSS.css", dest: OUT_DIR }],
+      }),
     ],
   },
   {

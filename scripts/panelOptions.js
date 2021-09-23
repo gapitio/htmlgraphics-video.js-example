@@ -11,6 +11,7 @@ const IN_PATHS = {
   onRender: "dist/onRender.js",
   onInit: "dist/onInit.js",
   codeData: "dist/custom-properties.json",
+  rootCSS: "dist/rootCSS.css",
 };
 
 const OUT_PATH = "dist/panel-options.json";

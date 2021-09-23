@@ -1,10 +1,12 @@
-# Bundler
+# Video.js example
 
-Bundler to make developing code easier and scalable.
+An example of how to use video.js with a bundler.
+
+Currently the icons won't work until v1.4.0 of the HTMLGraphics panel plugin.
 
 ## Table of contents
 
-- [Bundler](#bundler)
+- [Video.js example](#videojs-example)
   - [Table of contents](#table-of-contents)
   - [Contains](#contains)
   - [Usage](#usage)
@@ -42,6 +44,8 @@ npm run build
 ```
 
 Then go to `/dist` and copy the content of `panel-options.json` to the panels `Import/export` option.
+
+Changes to `./src/rootCSS.css` might not update on the first save.
 
 ## Dev site
 
